@@ -165,7 +165,7 @@ class StepHelper implements Step.InternalFormStepListener {
                 form.goToStep(form.getStepPosition(step), true);
             }
         });
-        nextButtonView.setOnClickListener(view -> form.goToStep(form.getStepPosition(step) + 1, true));
+        nextButtonView.setOnClickListener(view -> form.goToStep(form.getStepPosition(step), true));
         cancelButtonView.setOnClickListener(view -> form.cancelForm());
 
         int position = form.getStepPosition(step);
